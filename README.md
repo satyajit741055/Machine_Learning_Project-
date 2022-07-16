@@ -22,7 +22,7 @@ Activating Conda Environment
 
 To setup ci/cd pipeline in heroku we need 3 information 
 1. Hroku_Mail : satyajit7410@gmail.com
-2. API_KEY : defe7295-de4b-4aba-a64e-5525a4b1c35e
+2. API_KEY : <>
 3. App_name : ml-regression74
 
 
