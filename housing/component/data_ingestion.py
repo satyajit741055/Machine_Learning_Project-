@@ -1,11 +1,13 @@
+from urllib.parse import urlsplit
 from housing.entity.config_entity import DataIngestionConfig
 import sys,os
 from housing.exception import HousingException
 from housing.logger import logging
 from housing.entity.artifact_entity import DataIngestionArtifact
 import tarfile
-import numpy as np
 from six.moves import urllib
+
+import numpy as np
 import pandas as pd
 from sklearn.model_selection import StratifiedShuffleSplit
 
