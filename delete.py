@@ -2,7 +2,7 @@ from housing.pipeline.pipeline import Pipeline
 from housing.config.configuration import Configuartion
 def main():
     try:
-        pipeline = Pipeline()
+        pipeline = Pipeline(config=Configuartion())
         pipeline.run_pipeline()
 
         

@@ -6,8 +6,6 @@ from housing.entity.config_entity import DataTransformationConfig
 from housing.entity.artifact_entity import DataIngestionArtifact,\
 DataValidationArtifact,DataTransformationArtifact
 import sys,os
-
-
 import numpy as np
 from sklearn.base import BaseEstimator,TransformerMixin
 from sklearn.preprocessing import StandardScaler,OneHotEncoder
@@ -124,8 +122,8 @@ class DataTransformation:
                 )),
                 ('scaler', StandardScaler())
             ]
-            ) 
-            
+            )
+
             cat_pipeline = Pipeline(steps=[
                  ('impute', SimpleImputer(strategy="most_frequent")),
                  ('one_hot_encoder', OneHotEncoder()),

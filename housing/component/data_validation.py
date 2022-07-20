@@ -6,7 +6,6 @@ from housing.entity.config_entity import DataValidationConfig
 from housing.entity.artifact_entity import DataIngestionArtifact,DataValidationArtifact
 import os,sys
 import pandas  as pd
-
 from evidently.model_profile import Profile
 from evidently.model_profile.sections import DataDriftProfileSection
 from evidently.dashboard import Dashboard
@@ -44,7 +43,6 @@ class DataValidation:
             train_file_path = self.data_ingestion_artifact.train_file_path
             test_file_path = self.data_ingestion_artifact.test_file_path
 
-            print(train_file_path)
             is_train_file_exist = os.path.exists(train_file_path)
             is_test_file_exist = os.path.exists(test_file_path)
 
