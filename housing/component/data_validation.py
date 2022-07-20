@@ -44,6 +44,7 @@ class DataValidation:
             train_file_path = self.data_ingestion_artifact.train_file_path
             test_file_path = self.data_ingestion_artifact.test_file_path
 
+            print(train_file_path)
             is_train_file_exist = os.path.exists(train_file_path)
             is_test_file_exist = os.path.exists(test_file_path)
 

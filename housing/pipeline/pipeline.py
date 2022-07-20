@@ -35,6 +35,6 @@ class Pipeline:
     def run_pipeline(self):
         try:
             data_ingestion_artifact = self.start_data_ingestion()
-            data_validation_artifact = self.start_data_validation()
+            data_validation_artifact = self.start_data_validation(data_ingestion_artifact=data_ingestion_artifact)
         except Exception as e:
             raise HousingException(e, sys) from e
